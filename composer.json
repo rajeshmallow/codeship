@@ -1,0 +1,49 @@
+{
+    "require": {
+        "laravel/framework": "4.2.*",
+        "teepluss/cloudinary": "dev-master",
+        "guzzle/guzzle": "3.8.0",
+        "binarix/foundation-pagination": "dev-master",
+        "phpexcel/phpexcel": "1.7.*",
+        "hugofirth/mailchimp": "2.0.*",
+        "mccool/laravel-auto-presenter": "2.*",
+        "pda/pheanstalk": "2.0.*",
+        "barryvdh/laravel-debugbar": "1.*@dev",
+        "hashids/hashids": "1.0.0",
+        "artdarek/oauth-4-laravel": "1.0.*",
+        "misd/linkify": "1.1.*@dev",
+        "michelf/php-markdown": "1.4.*@dev",
+        "heybigname/backup-manager": "dev-master",
+        "doctrine/dbal": "2.4.*",
+        "laracasts/flash": "~1.0",
+        "fzaninotto/faker": "1.5.*@dev"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "codeception/codeception": "dev-master",
+        "codeception/aspect-mock": "*",
+        "captbaritone/mailcatcher-codeception-module": "dev-master",
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/controllers",
+            "app/queue",
+            "app/commands",
+            "app/domain",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php",
+            "tests/acceptance"
+        ],
+        "psr-0": {
+            "MomMeetMom\\": "app/domain/",
+            "Controllers\\": "app/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+}
